@@ -80,11 +80,6 @@ call plug#end()
     set path+=**
     set wildmenu
 
-    " Enable foldable
-    set foldenable
-    set foldmethod=indent
-    set foldlevel=2
-
     " Dirvish settings
     let g:dirvish_mode = ':sort ,^.*[\/],' " sort folder at top
 
