@@ -111,9 +111,9 @@ call plug#end()
     set copyindent             " copy indent from the previous line
     set preserveindent         " preserve indent based on most of the indentation
     set smartindent            " Indent smartly
-    set tabstop=4              " Set tab width to 4
-    set softtabstop=4          " Tab key indents by 4 spaces.
-    set shiftwidth=4           " >> indents by 4 spaces.
+    set tabstop=2              " Set tab width to 4
+    set softtabstop=2          " Tab key indents by 4 spaces.
+    set shiftwidth=2           " >> indents by 4 spaces.
     set shiftround             " >> indents to next multiple of 'shiftwidth'.
     set expandtab              " default to use space rather than tab to indent
 
