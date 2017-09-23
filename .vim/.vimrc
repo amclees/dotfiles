@@ -173,6 +173,8 @@ call plug#end()
 
     " Vim-signature
     let g:SignatureMarkTextHLDynamic=1
+
+    tnoremap <Esc> <C-\><C-n>
 "" }
 
 "" Leader key bindings {
