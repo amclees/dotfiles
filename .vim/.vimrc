@@ -1,3 +1,9 @@
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.local/share/nvim/plugged')
 
 "" Common plugins {
@@ -67,6 +73,8 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'elmcast/elm-vim'
     " Markdown
     Plug 'plasticboy/vim-markdown'
+    " Crystal
+    Plug 'rhysd/vim-crystal'
 "" }
 
 "" Initialize plugin system
