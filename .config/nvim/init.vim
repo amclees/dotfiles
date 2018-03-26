@@ -57,6 +57,9 @@ call plug#begin('~/.local/share/nvim/plugged')
     endfunction
 
     Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }
+
+    " YCM
+    Plug 'Valloric/YouCompleteMe'
   "" }
 
 "" Languages {
@@ -88,6 +91,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'plasticboy/vim-markdown'
     " Crystal
     Plug 'rhysd/vim-crystal'
+
 "" }
 
 "" Initialize plugin system
@@ -199,7 +203,7 @@ call plug#end()
 "" }
 
 "" Leader key bindings {
-    " find bufer quickly
+    " find buffer quickly
     nmap <leader>ls :ls<CR>:buffer<SPACE>
     " quick shortcut to insert current datetime
     map <leader>cdt :put =strftime('%c')<CR>
@@ -225,6 +229,12 @@ call plug#end()
     " Vimux settings
     map <leader>tmuxb :VimuxRunLastCommand<CR>
     map <leader>tmuxc :VimuxPromptCommand<CR>
+
+    " C - hjkl split navigation
+    nnoremap <C-J> <C-W><C-J>
+    nnoremap <C-K> <C-W><C-K>
+    nnoremap <C-L> <C-W><C-L>
+    nnoremap <C-H> <C-W><C-H>
 
     " shortcuts for Go related files
     function! s:build_go_files()
