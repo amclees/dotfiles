@@ -3,6 +3,7 @@
 DOTFILES=$(dirname "$(readlink -f "$0")")
 echo "$DOTFILES"
 
+ln -s "$DOTFILES/git-completion.bash" ~/git-completion.bash
 ln -s "$DOTFILES/.bashrc" ~/.bashrc
 ln -s "$DOTFILES/.irbrc" ~/.irbrc
 ln -s "$DOTFILES/.config" ~/.config

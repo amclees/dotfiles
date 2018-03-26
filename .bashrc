@@ -13,3 +13,4 @@ PS1='[\u@\h \W]\$ '
 export GPG_TTY=$(tty)
 export VISUAL=nvim
 export EDITOR="$VISUAL"
+source ~/git-completion.bash
