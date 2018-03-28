@@ -7,3 +7,4 @@ ln -s "$DOTFILES/git-completion.bash" ~/git-completion.bash
 ln -s "$DOTFILES/.bashrc" ~/.bashrc
 ln -s "$DOTFILES/.irbrc" ~/.irbrc
 ln -s "$DOTFILES/.config" ~/.config
+ln -s "$DOTFILES/.tmux.conf" ~/.tmux.conf
